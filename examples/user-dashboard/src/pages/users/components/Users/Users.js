@@ -77,6 +77,10 @@ function Users({ dispatch, list: dataSource, loading, total, page: current }) {
     <div className={styles.normal}>
       <div>
         <div className={styles.create}>
+          {/* 
+            event:when user model wrap the button, click the button will open the user model
+            pattern: render props
+          */}
           <UserModal record={{}} onOk={createHandler}>
             <Button type="primary">Create User</Button>
           </UserModal>
